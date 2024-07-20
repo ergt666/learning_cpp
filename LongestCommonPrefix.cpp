@@ -9,13 +9,10 @@ int main()
 {   
     vector<string> words = {"flower","flow","flight"};
 	
-	sort(words.begin(), words.end());
-
+    sort(words.begin(), words.end());
     for (const auto& word : words) {
         cout << word << " ";
     }
-	
-	
 	string key_word = words[0];
 	cout << key_word << endl;
 	size_t x = 0;
@@ -30,18 +27,14 @@ int main()
 			
 			string word = words[i];
 			cout << "\nВитягуємо слово: " << word << endl;
-		
-			
+				
 			for (size_t j = x; j < word.length(); j++){
 				
 				char letter2 = word[j];
-			
 				cout << "Витягуємо з нього букву 3: " << letter2 << endl;
-				
-				
+					
 				if (letter == letter2) { cout << letter << " = " << letter2 << "\nЗійшлося!\n"<< endl;}
-				else { cout << "No" << endl; goto exitLoops;}
-				
+				else { cout << "No" << endl; goto exitLoops;}				
 				break;
 				}			
 			}		
